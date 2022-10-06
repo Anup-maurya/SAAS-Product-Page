@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+button {
+  cursor: pointer;
+}
+
+header {
+  font-family: "Poppins", sans-serif;
+  padding: 30px 100px;
+  background-color: #7030cc;
+  color: #ffffff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo img {
+  width: 100%;
+}
+
+nav .list {
+  display: flex;
+  align-items: center;
+}
+
+nav .list-item {
+  margin-right: 60px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.list-item.active {
+  color: #1bbcef;
+  border-bottom: 1px solid #ffb6c1;
+  padding-bottom: 3px;
+}
+
+.nav-btn {
+  font-family: "Roboto", sans-serif;
+  background-color: #1bbcef;
+  font-size: 16px;
+  padding: 12px 25px;
+  color: #ffffff;
+  border: none;
+}
+
+.menu-icon {
+  display: none;
+  height: 30px;
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-left {
+  margin-top: 100px;
+  width: 39%;
+}
+
+.hero-left h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 50px;
+}
+
+.hero-left p {
+  margin-top: 30px;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.hero-right img {
+  margin-top: 50px;
+  height: 400px;
+  width: 100%;
+}
+
+.features-section {
+  padding: 6% 10% 1% 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.feature-left img {
+  height: 600px;
+}
+
+.feature-right {
+  margin-top: 50px;
+  width: 30%;
+}
+
+.feature-right h2 {
+  font-size: 30px;
+}
+
+.feature-cards {
+  padding: 5%;
+  margin-top: 60px;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.feature-card img {
+  margin-right: 10px;
+  height: 20px;
+  margin-top: 5px;
+}
+
+.feature-card div h3 {
+  font-size: 24px;
+}
+
+.feature-card div p {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+.services-section {
+  padding: 50px 250px;
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 30px;
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.service-card {
+    border-radius: 30px;
+  box-shadow: 5px 5px 3px #d3d3d3;
+  cursor: pointer;
+}
+
+.service-card .card-header {
+  height: 200px;
+  padding: 50px;
+}
+
+.service-card .card-header span {
+  display: inline-block;
+  height: 120px;
+  width: 120px;
+  border-radius: 60px;
+}
+
+#service-card1 {
+  background-color: #faeaeb;
+}
+#service-card2 {
+  background-color: #fbf0ee;
+}
+#service-card3 {
+  background-color: #e9f4f6;
+}
+#service-card4 {
+  background-color: #f2e7f5;
+}
+
+.service-card .card-header img {
+  margin-top: 30px;
+  height: 60px;
+}
+
+.service-card .card-body {
+  padding: 10px 20px;
+}
+
+.service-card .card-body.active {
+  background-color: #6429b7;
+  color: #ffffff;
+  border-radius: 30px;
+  margin-top: 35px;
+}
+
+.service-card .card-body h3 {
+  font-size: 24px;
+}
+
+.service-card .card-body p {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+  header {
+    padding: 20px 50px;
+  }
+
+  .feature-left img {
+    margin-top: 60px;
+    height: 500px;
+  }
+  .feature-right {
+    width: 40%;
+  }
+  .services-section {
+    padding: 22px 32px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  nav .list {
+    display: none;
+  }
+  .menu-icon {
+    display: inline-block;
+  }
+  .hero-left {
+    margin-top: 60px;
+    width: 100%;
+  }
+  .hero-right img {
+    display: none;
+  }
+  .features-section {
+    flex-direction: column;
+  }
+  .feature-left img {
+    width: 100%;
+  }
+  .feature-right {
+    width: 100%;
+  }
+  .service-cards {
+    grid-template-columns: 1fr ;
+  }
+  .services-section {
+    padding: 20px 120px;
+  }
+
+
+  .service-card .card-body.active h3 {
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .hero-left {
+    margin-top: 350px;
+    width: 95%;
+    margin-bottom: 20px;
+  }
+  .hero-right img {
+    width: 95%;
+  }
+  .feature-right {
+    margin-top: 10px;
+  }
+  .feature-card div p {
+    margin-top: 10px;
+  }
+  
+
+  .service-card .card-header {
+    height: 200px;
+    padding: 30px;
+  }
+  .services-section {
+    padding: 20px 50px;
+  }
+
+  .service-cards {
+    grid-template-columns: 1fr;
+  }
+}
